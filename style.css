@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@700&display=swap');
+
+
+body {
+    background-color: #0e1118; /* Fundal foarte închis */
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff; /* Culoare text principal */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff; /* Roz plăcut pentru titluri */
+}
+
+.sidebar .sidebar-content {
+    background-color: #0e1118; /* Fundal pentru sidebar */
+    color: #ffffff; /* Culoare text sidebar */
+}
+
+.stButton>button {
+    background-color: rgba(100, 101, 110, 0.5); /* Roz plăcut pentru butoane */
+    color: #ffffff; /* Text alb pentru butoane */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.stButton>button:hover {
+   background-color: #0e1118; /* Roz închis pentru hover pe butoane */
+    color: #ffffff; /* Menține textul alb pentru buton activ */
+}
+
+.stButton>button:active:visited {
+    background-color: #0e1118; /* Roz foarte închis pentru buton activ */
+    color: #ffffff; /* Menține textul alb pentru buton activ */
+}
+
+.stMarkdown, .stDataFrame, .stTable, .stTextInput, .stSelectbox {
+    /*background-color: #37474f; !* Fundal gri închis pentru elementele de conținut *!*/
+    color: #ffffff; /* Text gri deschis pentru conținut */
+    /*border: 1px solid #455a64; !* Bordură gri închis pentru elemente *!*/
+    border-radius: 5px;
+    padding: 10px;
+}
