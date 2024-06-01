@@ -34,7 +34,7 @@ def load_css(file_name):
 load_css('style.css')
 
 def get_data():
-    return pd.read_csv('https://raw.githubusercontent.com/AA11nta/try/main/BreastCancerProject/breast-cancer.csv', header=0)
+    return pd.read_csv('https://raw.githubusercontent.com/AA11nta/Licenta/main/breast-cancer.csv', header=0)
 
 def new_alg(df):
 
