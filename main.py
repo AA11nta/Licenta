@@ -47,7 +47,7 @@ def new_alg(df):
     features_scaled = scaler.fit_transform(features)
 
     # Split the dataset
-    X_train, X_test, y_train, y_test = train_test_split(features_scaled, target, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(features_scaled, target, test_size=0.3, random_state=42)
 
     # Define the model
     model = tf.keras.models.Sequential([
@@ -62,7 +62,7 @@ def new_alg(df):
     model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
     # Train the model
-    history = model.fit(X_train, y_train, epochs=50, validation_split=0.2, batch_size=32)
+    history = model.fit(X_train, y_train, epochs=50, validation_split=0.3, batch_size=32)
 
     # Evaluate the model
     loss, accuracy = model.evaluate(X_test, y_test)
